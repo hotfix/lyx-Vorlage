@@ -1,0 +1,576 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\options pointlessnumbers, abstracton, headsepline,
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 120 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.2
+\use_hyperref false
+\pdf_title "Analyse und Interpretation des Risswachstums an thermisch hochbelasteten Bauteilen für die Fusionsforschung mittels IR Diagnostik und FE Modellierung"
+\pdf_author "Timo Schindler"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\bullet 2 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Beispiel für Bilder
+\end_layout
+
+\begin_layout Standard
+Hier testen wir mal ein Bild und wie dieses Dargestellt wird
+\end_layout
+
+\begin_layout Section
+Bild mit Untertitel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/1799_Diplomarbeit_Schnitt.eps
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dies ist ein sehr langer Text.
+ Hier sollte das Bild so beschrieben werden, dass man auch eine Ahnung vom
+ Bild hat, wenn man nur den Bilduntertitel liest.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Kurztitel der nur in Abb.
+ Verzeichnis angezeigt wird
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Testbild"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In diesem Text verweise ich nun auf das eben genannte Bild (Vgl.
+ Abbildung 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Testbild"
+
+\end_inset
+
+).
+ Dazu muss im Bild eine sog.
+ Marke eingefügt werden (in diesem Fall: fig:Testbild).
+ Als Bildbreite ist in diesem Dokument 15cm gewählt.
+ Dies sieht dann sehr passabel im Fließtext aus.
+ Versucht bei den Breiten der Bilder einheitlich zu bleiben.
+ Also 15cm und 10cm zum Beispiel.
+ Dies hilft dem Leser und unterbricht nicht dauernd im Lesefluss.
+ Im Fließtext umschlossene Bilder sind weniger gern gesehen in Bachelorarbeiten,
+ aber hier auch wieder den Prof.
+ fragen.
+\end_layout
+
+\begin_layout Subsection
+Tabelle mit Untertitel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="3cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+titelzeile
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Titel über zwei Spalten
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aufzählungen
+\end_layout
+
+\begin_layout Itemize
+1
+\end_layout
+
+\begin_layout Itemize
+2
+\end_layout
+
+\begin_layout Itemize
+3
+\end_layout
+
+\begin_layout Itemize
+4
+\end_layout
+
+\begin_layout Plain Layout
+gehen nur bei festgelegter Zeilenbreite
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Auch Absätze gehen nur bei festgelegter Spaltenbreite.
+\end_layout
+
+\begin_layout Plain Layout
+Wie man hier sieht!
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zwei Zeilen zusammenfassen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Genau wie bei Bildern sollte auch der Tabellenuntertitel die Tabelle grob
+ beschreiben 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Dies ist wieder der Kurztitel zur Tabelle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Programmcode schön darstellen
+\end_layout
+
+\begin_layout Standard
+Hier ein Beispiel wie man Programmcode richtig darstellen könnte:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left,basicstyle={\normalsize\sffamily},breaklines=true,showstringspaces=false,backgroundcolor={\color{lightgray}},frame={leftline,bottomline,rightline,topline},xleftmargin=15pt,caption={Modifiziertes Programm mit setvbuf() }"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h> 
+\end_layout
+
+\begin_layout Plain Layout
+
+main() 
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+        int i;
+\end_layout
+
+\begin_layout Plain Layout
+
+        for (i = 0; i<=2; i++)
+\end_layout
+
+\begin_layout Plain Layout
+
+        {
+\end_layout
+
+\begin_layout Plain Layout
+
+        fork();
+\end_layout
+
+\begin_layout Plain Layout
+
+        setvbuf(stdout, NULL, _IOLBF, 0); //(Stream, Pufferangabe, Puffertyp,
+ Puffergroesse)
+\end_layout
+
+\begin_layout Plain Layout
+
+        printf("PID=%6d, i=%d
+\backslash
+n", getpid(), i);
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Unter 
+\begin_inset Quotes gld
+\end_inset
+
+Dokument –> Einstellungen –> Latexvorspann
+\begin_inset Quotes grd
+\end_inset
+
+ habe ich für die Hintergrundfarbe folgendes eingefügt:
+\end_layout
+
+\begin_layout Itemize
+
+\backslash
+definecolor{lightgray}{rgb}{0.8,0.8,0.8}
+\end_layout
+
+\begin_layout Standard
+Dies legt die Hintergrundfarbe fest.
+ Sie kann natürlich nach belieben angepasst werden.
+ Wenn ihr Rechtsklick auf das Programmlisting macht und dann unter 
+\begin_inset Quotes gld
+\end_inset
+
+Einstellungen –> Erweitert
+\begin_inset Quotes grd
+\end_inset
+
+ geht, seht ihr einige Anpassungen die ich gemacht habe.
+ Unter Anderem wird hier auch 15pt von links eingerückt, damit die Zeilennummern
+ schön zum Fließtext passen.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,180 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\options pointlessnumbers, abstracton, headsepline,
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 120 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.2
+\use_hyperref false
+\pdf_title "Analyse und Interpretation des Risswachstums an thermisch hochbelasteten Bauteilen für die Fusionsforschung mittels IR Diagnostik und FE Modellierung"
+\pdf_author "Timo Schindler"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\bullet 2 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Einführung
+\end_layout
+
+\begin_layout Section
+Vorspann und alle Verzeichnisse
+\end_layout
+
+\begin_layout Standard
+Im Vorspann könnt ihr verschiedene Listen sehen.
+ In dieser Testarbeit sind mal alle nur erdenklichen Punkte vorhanden:
+\end_layout
+
+\begin_layout Itemize
+Ehrenwörtliche Erklärung (nach Guttenberg wohl pflicht)
+\end_layout
+
+\begin_layout Itemize
+Sperrvermerk: Eigentlich nur nötig wenn von der Firma verlangt wird.
+ Dieser kann dann natürlich auch anders aussehen.
+ Hier am besten mit der Firma sprechen
+\end_layout
+
+\begin_layout Itemize
+Kurzfassung: Die Kurzfassung ist eigentlich Pflicht.
+ Manche Betreuer möchten, dss die Kurzfassung auch in Englisch verfasst
+ wird.
+\end_layout
+
+\begin_layout Itemize
+Inhaltsverzeichnis: Ist Pflicht.
+ Da dürfte es keine Diskussion geben.
+\end_layout
+
+\begin_layout Itemize
+Abbildungsverzeichnis: War bisher bei all meine Arbeiten Pflicht
+\end_layout
+
+\begin_layout Itemize
+Tabellenverzeichnis: War auch Pflicht bei allen Arbeiten
+\end_layout
+
+\begin_layout Section
+Abschnitt
+\end_layout
+
+\begin_layout Standard
+Einfach mal um zu zeigen, wie es im Inhaltsverzeichnis aussieht.
+\end_layout
+
+\begin_layout Section
+Weiterer Abschnitt
+\end_layout
+
+\begin_layout Subsection
+Ein Beispiel für einen Unterabschnitt
+\end_layout
+
+\begin_layout Subsection
+Und gleich nochmal ein Beispiel
+\end_layout
+
+\begin_layout Subsubsection
+Ein Unterunterabschnitt
+\end_layout
+
+\begin_layout Standard
+Wie ihr seht wird ein Unterunterabschnitt nicht mehr in die Auflistung aufgenomm
+en.
+ Dies kann unter 
+\begin_inset Quotes gld
+\end_inset
+
+Dokument –> Einstellungen –> Nummerierung & Inhaltsverzeichnis
+\begin_inset Quotes grd
+\end_inset
+
+ angepasst werden.
+\end_layout
+
+\end_body
+\end_document

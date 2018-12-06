@@ -1,0 +1,255 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\begin_preamble
+% verschieden Symbole, Zeichen wie (c), €
+\usepackage{textcomp,units}
+
+% Mehr Platz zwischen Tabelle und Untertitel
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+
+%Kapitelzahl sehr groß
+\makeatletter% siehe De-TeX-FAQ 
+ \renewcommand*{\chapterformat}{% 
+   \begingroup% damit \unitlength-Änderung lokal bleibt 
+     \setlength{\unitlength}{1mm}% 
+     \begin{picture}(10,10)(0,5) 
+       \setlength{\fboxsep}{0pt} 
+       %\put(0,0){\framebox(20,40){}}% 
+       %\put(0,20){\makebox(20,20){\rule{20\unitlength}{20\unitlength}}}% 
+       \put(10,15){\line(1,0){\dimexpr 
+           \textwidth-20\unitlength\relax\@gobble}}% 
+       \put(0,0){\makebox(10,20)[r]{% 
+           \fontsize{28\unitlength}{28\unitlength}\selectfont\thechapter 
+           \kern-.05em% Ziffer in der Zeichenzelle nach rechts schieben 
+         }}% 
+       \put(10,15){\makebox(\dimexpr 
+           \textwidth-20\unitlength\relax\@gobble,\ht\strutbox\@gobble)[l]{% 
+             \ \normalsize\color{black}\chapapp~\thechapter\autodot 
+           }}% 
+     \end{picture} % <-- Leerzeichen ist hier beabsichtigt! 
+   \endgroup 
+}
+
+\usepackage{ %a4wide,
+            ellipsis, fixltx2e, mparhack,   %Fehlerkorrektur für Marginalien
+            booktabs, longtable             %schönere Tabellen
+}  
+
+\usepackage[automark]{scrpage2}
+%\automark[chapter]{chapter}
+\clearscrheadfoot
+\ohead{\\\headmark}
+\ihead{\includegraphics[scale=0.15]{logo.jpg}}%\pagemark}
+\ofoot[\pagemark]{\pagemark}
+
+
+%Kurzfassung und Abstract (englisch) auf eine Seite
+\renewenvironment{abstract}{
+    \@beginparpenalty\@lowpenalty
+      \begin{center}
+        \normalfont\sectfont\nobreak\abstractname
+        \@endparpenalty\@M
+      \end{center}
+}{
+    \par
+}
+
+
+
+% schönerer Blocksatz!!
+
+\usepackage{ifpdf} % part of the hyperref bundle
+\ifpdf % if pdflatex is used
+
+%set fonts for nicer pdf view
+ \IfFileExists{lmodern.sty}{\usepackage{lmodern}}
+  {\usepackage[scaled=0.92]{helvet}
+    \usepackage{mathptmx}
+    \usepackage{courier} }
+\fi
+
+ % the pages of the TOC are numbered roman
+ % and a pdf-bookmark for the TOC is added
+ \pagenumbering{roman}
+ \let\myTOC\tableofcontents
+ \renewcommand\tableofcontents{
+   %\pdfbookmark[1]{Contents}{}
+   \myTOC
+   \clearpage
+   \pagenumbering{arabic}}
+
+%Bezeichungen anpassen
+%Babelpaket muß zuvor geladen werden
+%\usepackage[ngerman]{babel}
+\addto\captionsngerman{ 
+\renewcommand{\figurename}{Abb.}% 
+\renewcommand{\tablename}{Tab.}% 
+\renewcommand{\abstractname}{Kurzfassung}
+%\renewcommand{\nomname}{Abkürzungen}
+}
+
+% Alle Querverweise und URLs als Link darstellen
+% In der PDF-Ausgabe
+ \usepackage[colorlinks=true, bookmarks, bookmarksnumbered, bookmarksopen, bookmarksopenlevel=1,
+  linkcolor=black, citecolor=black, urlcolor=blue, filecolor=blue,
+  pdfpagelayout=OneColumn, pdfnewwindow=true,
+  pdfstartview=XYZ, plainpages=false, pdfpagelabels,
+  pdfauthor={LyX Team}, pdftex,
+  pdftitle={LyX's Figure, Table, Floats, Notes, and Boxes manual},
+  pdfsubject={LyX-documentation about figures, tables, floats, notes, and boxes},
+  pdfkeywords={LyX, Tables, Figures, Floats, Boxes, Notes}]{hyperref}
+
+%mehr Platz zwischen Überschrift und Tabelle
+\newcommand{\@ldtable}{}
+\let\@ldtable\table
+\renewcommand{\table}{ %
+                 \setlength{\@tempdima}{\abovecaptionskip} %
+                 \setlength{\abovecaptionskip}{\belowcaptionskip} %
+                 \setlength{\belowcaptionskip}{\@tempdima} %
+                 \@ldtable}
+
+%In dieser Arbeit wird auf die Nomenklatur als Abkürzungsverzeichnis verzichtet. Bei Wunsch wieder aktivieren.
+%Nomenklatur als Abkürzungsverzeichnis verwenden
+%\renewcommand{\nomname}{Abkürzungsverzeichnis}
+%\renewcommand{\nomlabelwidth}{20mm}
+
+%Nomenklatur als Glossar verwenden
+%Nur Noetig wenn auch Glossar verwendet wird.
+\renewcommand{\nomname}{Glossar}
+
+%Farbe für Programmcode festlegen
+\definecolor{lightgray}{rgb}{0.8,0.8,0.8}
+\end_preamble
+\options pointlessnumbers, abstracton, headsepline,
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language ngerman
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 120 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.2
+\use_hyperref false
+\pdf_title "Analyse und Interpretation des Risswachstums an thermisch hochbelasteten Bauteilen für die Fusionsforschung mittels IR Diagnostik und FE Modellierung"
+\pdf_author "Timo Schindler"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Stichwortverzeichnis
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\bullet 2 0 9 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 17.1mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+
+\series bold
+\size huge
+Kurzfassung
+\end_layout
+
+\begin_layout Standard
+Dieses Beispiel soll ein paar Tipps geben, wie man eine schöne Bachelorarbeit
+ schreibt.
+ Ich selbst habe mit dieser Vorlage bereits drei Arbeiten geschrieben und
+ es gab keine Beanstandungen.
+ Wichtigster Punkt aber zuvor: Fragt euren betreuenden Professor ob das
+ Layout so passt.
+ Dieser Entscheidet schlussendlich über eure Note und sollte auch mit dem
+ Layout zufrieden sein.
+\end_layout
+
+\end_body
+\end_document
