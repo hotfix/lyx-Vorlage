@@ -36,8 +36,8 @@ theorems-ams
 \paperfontsize 12
 \spacing other 1.2
 \use_hyperref false
-\pdf_title "Analyse und Interpretation des Risswachstums an thermisch hochbelasteten Bauteilen für die Fusionsforschung mittels IR Diagnostik und FE Modellierung"
-\pdf_author "Timo Schindler"
+\pdf_title "Titel der Abschlussarbeit"
+\pdf_author "StudentVorname StudentNachname"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
 \pdf_bookmarksopen false
